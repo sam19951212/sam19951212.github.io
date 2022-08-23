@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Portfolios |  Game For Life
+    Value type and Reference type in C# |  Game For Life
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -36,7 +36,7 @@
   <div id="app">
     <main class="content on">
       <section class="outer">
-  <article id="page-" class="article article-type-page" itemscope
+  <article id="post-ValueReferenceType" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -44,7 +44,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Portfolios
+  Value type and Reference type in C#
 </h1>
  
 
@@ -52,6 +52,20 @@
     
 
     
+    <div class="article-meta">
+      <a href="/2021/04/06/ValueReferenceType/" class="article-date">
+  <time datetime="2021-04-06T14:15:25.000Z" itemprop="datePublished">2021-04-06</time>
+</a>
+      
+      
+    </div>
+    
+
+    
+    
+
+
+
 
     
 
@@ -61,35 +75,21 @@
       
 
       
-      <h1 id="Professional-Game-Projects"><a href="#Professional-Game-Projects" class="headerlink" title="Professional Game Projects"></a>Professional Game Projects</h1><hr>
-<p>&nbsp;</p>
+      <p>In computer programming, data types can be divided into two categories: value types and reference types. Value type holds a data value with in its own memory space. In most cases, the value is often stored in the stack. Reference type holds a pointer or memory address that holds the data. The pointer is often stored in stack and the actual data is stored in the heap. </p>
+<a id="more"></a> 
+<img src="/2021/04/06/ValueReferenceType/StackHeap.png" class="">
+<p>In c#, some build-in value types are byte, short, int, long, float, double, decimal, char, bool. You also can create custom value type by using the key word struct instead of class. A value type is initialized when it is declared, because it has its own space once declared so it can’t be null, and it can’t be null. Reference type variables hold a reference to data, and its real data is stored in the data heap. Variables of all class instances and strings are reference types. When a variable of class is declared, only a small piece of memory is allocated in the stack (sometimes heap) to hold an address, and no memory space on the heap is allocated for it at this time, so it is empty and null until new keyword is used to create an instance of a class.  </p>
+<p>Examples showing how memories is used for value type (int) and reference type (string):</p>
+<img src="/2021/04/06/ValueReferenceType/MemoryAllocation.png" class="">
 
-<p><a href="https://yuxiunan.com/portfolios/GLB"><img src="index/GLB_Header.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/Chinaware"><img src="index/Chinaware_Header.png" alt=""></a></p>
-<p>&nbsp;</p>
+<p>In other programming languages like Java, you have the primitive types (int, boolean, char, byte…), and everything else extends the object class and therefore is an object. Different from java, C# is a strict object-oriented language. That means that <strong>Everything is an Object in C#. All values are stored as objects or as members of objects.</strong> Everything is a part of a class or structure, and much of what you work with are instances of these classes or structures.</p>
+<p>We often make mistakes when we use struct. Often many people use it as a class, which is the wrong way to understand it. Because it is a value type, the value of a variable is completed by copying when we assign the structure to other variables. For example, a and b are both structures, a is assigned to b, and when b changes the data, it is found that the data of a is not changed. </p>
+<p>Many people explain value types and reference types as the difference between stack and heap memory allocation, which is wrong. Stack is mainly used for memory within the function life cycle, while heap is more of unordered memory that can be released at any time. Therefore, the value type can be in the heap or the stack, and the pointer part of the reference type can also be in the stack and the heap. The difference is that the memory blocks pointed to by the reference type are all in the heap. This is convenient for memory control and garbage collection.<br><br /><br><br /><br><br /></p>
+<ol>
+<li>Brown, Erik E. (2006). Windows Forms in Action. Shelter Island, New York: Manning. p. 703. ISBN 978-1-932-39465-8.</li>
+<li>Stephens, Rod (2014). C# 5.0 Programmer’s Reference. Indianapolis, Indiana: John Wiley &amp; Sons. p. 57. ISBN 978-1-118-84728-2.</li>
+</ol>
 
-<h1 id="Other-Game-Projects"><a href="#Other-Game-Projects" class="headerlink" title="Other Game Projects"></a>Other Game Projects</h1><p>A collection of various university and hobby projects I have worked on as a programmer/designer/producer.</p>
-<hr>
-<h3 id="CMU-Course-Projects"><a href="#CMU-Course-Projects" class="headerlink" title="CMU Course Projects"></a>CMU Course Projects</h3><p><a href="https://yuxiunan.com/portfolios/TerraThrift"><img src="index/TerraThrift.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/FourSeasonDash"><img src="index/FourSeasonDash2.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/She"><img src="index/She.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/NaughtyRocky"><img src="index/NaughtyRocky.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/NightMaze"><img src="index/NightMaze.png" alt=""></a></p>
-<p>&nbsp;</p>
-
-<h3 id="Game-Jam-Projects"><a href="#Game-Jam-Projects" class="headerlink" title="Game Jam Projects"></a>Game Jam Projects</h3><p><a href="https://yuxiunan.com/portfolios/Redivider"><img src="index/Redevider.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/Achromatopsia"><img src="index/Achromatopsia.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/AtomicOrbital"><img src="index/AO.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/SevenYears"><img src="index/SevenYears.png" alt=""></a></p>
-<p>&nbsp;</p>
-
-<h3 id="DIS-Course-Projects"><a href="#DIS-Course-Projects" class="headerlink" title="DIS Course Projects"></a>DIS Course Projects</h3><p><a href="https://yuxiunan.com/portfolios/DiggletAdventure"><img src="index/Da.png" alt=""></a><br><a href="https://yuxiunan.com/portfolios/SpaceCrane"><img src="index/Space.png" alt=""></a></p>
-<!--### Chinaware - an online 3D mobile educational application about Chinese Porcelain
-<table border="0"><tr>
-<td><img src="index/Chinaware_Image1.jpg" width="100%" height="100%"></td>
-<td><img src="index/Chinaware_main_menu.jpg" width="100%" height="100%"></td>
-</tr></table>-->
-
-<!--### Digglet Adventure - a 2D platformer puzzle game
-[![](index/LethalGame.png)](https://yuxiunan.com/portfolios/LethalGame)
-![](index/Da_Image1.png)
-![](index/Da_main_menu.png)
-
-### SpaceCrane - a 3D puzzle game
-![](index/SpaceCrane_Image1.png)
-![](index/SpaceCrane_main_menu.png)-->
       
       <!-- reward -->
       
@@ -143,7 +143,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yuxiunan.com/portfolios/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yuxiunan.com/2021/04/06/ValueReferenceType/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -214,6 +214,8 @@
 
   
 
+  
+  
   
 
 </article>
@@ -359,6 +361,24 @@
 </script>
 
 
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
 
 
 
